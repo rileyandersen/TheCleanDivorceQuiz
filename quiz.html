@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relationship Assessment Questionnaire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="roadmapPage">
+            <h1>ROADMAP</h1>
+            <div class="cross" onCLick="hideRoadmap()">X</div>
+        </div>
+    <div id="quiz-container">
+        <div id="tool-name">Assessment Tool</div>
+        <div id="question-container">
+            <!-- Questions will be dynamically inserted here -->
+        </div>
+        <div id="navigation-container">
+            <button id="prev-btn">Previous</button>
+            <button id="skip-btn">Skip</button>
+            <button id="next-btn">Next</button>
+        </div>
+        <div id="result-container" style="display: none;">
+            <h2>Assessment Results</h2>
+            <p id="result-text"></p>
+        </div>
+    </div>
+    <div class="imgCover">
+        <div class="imgWrapper"></div>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "WOq8ulZPfkaCBMI6U",
+      });
+   })();
+</script>
+<script src="script.js"></script>
+</body>
+</html>

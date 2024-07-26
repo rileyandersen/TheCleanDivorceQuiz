@@ -1,0 +1,138 @@
+body {
+    font-family: Manrope;
+    background-color: #dfffac;
+    margin: 0;
+    padding: 0px;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+}
+.options{
+    font-size: larger;
+    list-style: none;
+}
+.option{
+    border: 1px solid black;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 40px;
+    background-color: #dcff82;
+    border-radius: 10px;
+    width: 80%;
+}
+.inputFor{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 4px;
+    background: #000;
+}
+input[type="radio"]:checked + .radio-mark {
+    background-color: #000;
+}
+#quiz-container {
+    height: 700px;
+    width: 100%;
+    margin: auto;
+    background: #dfffac;
+    padding: 20px;
+}
+.imgCover{
+    height: 750px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+
+}
+.imgWrapper {
+    height: 500px;
+    width: 100%;
+    background-position: -200px -61px;
+    background-size: 1200px;
+    mix-blend-mode: darken;
+    animation: fadein 0.1s linear;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#tool-name{
+    height: 100px;
+    width: 100%;
+    font-size: 60px;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+#question-container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e6ffc0;
+    border: #979797 1px solid;
+    border-radius: 10px;
+    width: 100%;
+}
+.question{
+    padding-left: 40px;
+}
+#navigation-container {
+    text-align: center;
+    background-color: transparent;
+    width: 100%;
+}
+
+button {
+    background: #d1ff5d;
+    color: black;
+    font-weight: bold;
+    border: 2px solid rgb(137, 137, 137);
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+button:hover {
+    background: #415709;
+    color: #fff;
+}
+
+#result-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.roadmapPage{
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: #e2ffba;
+    position: absolute;
+    transform: translateX(-100%);
+    transition:0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.after{
+    transform: translateX(0);
+}
+.cross{
+    font-size: 20px;
+}
+.relaventWrapper{
+    font-size: 20px;
+}
